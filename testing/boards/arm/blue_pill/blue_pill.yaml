@@ -1,0 +1,10 @@
+identifier: blue_pill
+name: name_of_your_choice
+type: mcu
+arch: arm
+toolchain:
+- zephyr
+ram: 48
+flash: 256
+supported:
+- gpio

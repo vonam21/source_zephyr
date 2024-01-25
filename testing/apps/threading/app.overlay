@@ -1,0 +1,26 @@
+/ {
+    leds {
+        compatible = "gpio-leds";
+
+        green_led_1: led {
+            gpios = <&gpioc 13 GPIO_ACTIVE_LOW>;
+            label = "User LED0";
+        };
+        green_led_2: led3 {
+            gpios = <&gpioa 10 GPIO_ACTIVE_HIGH>;
+            label = "User LED01";
+        };
+        green_led_3: led2 {
+            gpios = <&gpioa 2 GPIO_ACTIVE_HIGH>;
+            label = "User LED2";
+        };
+    };
+
+};
+
+&gpioc {
+    status = "okay";
+};
+&gpioa {
+    status = "okay";
+};

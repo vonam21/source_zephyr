@@ -1,0 +1,15 @@
+# Copyright (c) 2023 Quasal
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_STM32F103C8T6
+
+config BOARD
+    default "blue_pill"
+
+endif # BOARD_STM32F103C8T6
+
+config SLEEP_TIME_MS
+    int "Sleep time between led states (millisec)"
+    default 1000
+    help
+      This option sets the sleep time between led states in millisec.
